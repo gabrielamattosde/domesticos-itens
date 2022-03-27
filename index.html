@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="estilo.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="site-header sticky-top py-1 fw-bold">
+    <nav class="container d-flex flex-column flex-md-row justify-content-between ">
+      <a class="py-2" href="#" aria-label="Product ">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAINElEQVR4nO1abWwU1xU9982wCzhFWZOkZQ21IVFKEkVB9kaKqhBBU/GRYiAU16UqCdQzb5YlbtI2kDYfCglSpYgmVFgK7FugBpJIjROVhBADBWwKqtJKdknVplLaQqvyUVWNWTXF9toze/vD2Fk+dt+uPbtGqs+vtee8+849O/Pm3bsPGMMYxvD/DBqNSdeuXTu5v79/PYC5APoBHHFdd9POnTs/LbWWkhtgWdYdQohWAJVXXPpbOp1+aPv27X8qpZ6SGmDb9r1EtB/AzVkoF5h5USKR+HWpNIlSTeQ4zoNEdATZkweAEBEdsm17Yal0GaWYREr5LQBvAZiQBz1ARPWRSORMR0fHySJLK74BUsrHACgAZgHDBIDF1dXVFzs7O4v6OBTTAJJSbgDwEoa31hARzaupqSnv6Og46LO2zyYpRtC6ujojFAq9CkD6EY+Zd1dUVDRs2LDB9SNeJnw3oLGxMdjb2/saES33OfS+srKy+s2bN/f4GdRXA1atWnVjIBB4B8ADGmovgJ8CaGNmAjCXiB4HMF4z7ld9fX1Lmpubkz7IBeDja1BKOSUQCLRDn/wpwzBmKaWeFkIkiShZUVHxtGEYswCc0ox9IBAItEspp/ij2qc7oKGh4TbDMA4BmK6hnjRNc6Hrui6At3HJLCI6zszLTNM0XddtBTBLE+e053nzduzY8ZeRah/xHSClvNswjGPQJ38MwJxUKhUEcBwZdwozzwbwgeu6ZaZpzmbmX2piTTcM44SUsnpE4jFCA6LR6BwAJwCENdR3y8rKFhJRhWEYxwHMvAbnVgDHPc+7dfz48bUAWjQxPw/gmJRyXsHCMzBsA6SUS9PpdCuASRrqrnA4/PWenp67mfkYgGk5uFOYuS2VSt174cKFFQDimtg3ANhn2/Y3CpB+GYZlgOM4qzHwDeVctZn5JaXU6rNnz85Jp9NHANyUR/gQgMPl5eVLlFJRIvqhhh8gojccx4nmp/5yFLwTdBznKWZuQm7zGMC6RCKx0XGcbwN4E/nVAYMwASyPRCJn4/F4U01Nzb8BLED2RVsAWFRdXT2hs7PzcAHzFGQASSlfAfCchtdHRI8opZRt248D2IbC6oBBCAC1kUikVym1ORKJ/AHAklyxiOj+SCRyS21t7YH29nbOZ5K8XoN1dXWBUCi0G0C9hnqRiJbH4/GDUsrnATyfT/w8sCUcDn/vzJkzc4QQewF8TsPf29fXt6K5ublXF1hrwMqVK8smTpz4NjPP11C7mLk2mUz+JhQKbQNg6WIXiNcAfIeI7mHm95G7rwAAbcFgcGlTU9N/cpFyGtDQ0FBumuZ+Zr5PM9nfASwIBoOnU6nUGwCWafjDAhG9x8z1AKYAOIiBV2cufgcRPbRt27Z/ZeVkuxCNRqvS6fQBAF/S6PrINM0F3d3dnwYCgX0A7tfwRwRm/i0RfQ3AOACtAO7RDDnled78bLvGaxpg2/ZdRHQAwFSfxfiFj0zTXMDM//U8713oTf8nMy9MJBJXdZiuepVZlnUfER2DJnkAh8eNG/egYRiTMLC1LVXyAHCn67rHAdwCYD6A/Rr+F4iozbKs2VdeuMwA27YXCyGOApicKxoz7w6Hwwv7+/vv8DzvA2iexSKh0vO8E8x8VzgcXsrMuzX8G4UQB23bXpz5zyEDLMuqIaJ8NiwvJxKJVefPn59LREehX42LiZuI6Oi5c+e+kkgkVhHRTzT8CUTUYlnW0KI+ZIBhGM8ACOYYzADWK6WetG27npnfw8BefLQxWA/Ux+PxdQDWY0BrNgSEED8a/GPIAGa+LccgF8BqpdQmKeVjRPQ6gMAIhfuJABG97jhOo1JqE4DVGNCcDTMGP2SuAR9mIXcz88NKqV1SyhcB6OqA0YJg5i22bW9USu1i5ocBdGfh/n5o0OAHz/NeAHBlr61LCDEvmUy2Sinj0NcBmTgNIGqa5hfD4bDhed5kZl6Ggf7BNTHYGQJwczgcHmcYxkxmfgLAmXwnJaJnpZTxZDLZKoSYB6DrCsonzPzCED/zSjQarfI871kimgbgjwA2KaXO27b9MhF9P18RAPb19PSs2LNnz8VraXQc5xlmfjFjfgbwnFLqx7jG8xuLxW5wXfcXAL6arwBmfiWRSPzgUv9wHRHdycx/Ngxj89atW4d6j3kVQ7ZttxTQ5v5dX1/fl3WFiJTyuxjoDAPAE0qpLbn4jY2NwVQq9SH0O1MAADO/lUgk6nQ8359lInoqnypMKbWFiBYR0SJd8gDQ1NSUYuYn/VH5GYZTp+fCJ11dXUfzJcfj8fcLCZ5MJg+FQqFuABMLVpYFvt4BzPzXlpYWz8+YmWhpaekD8LGfMX01gIhybaT8gm/fPuD/GjAzFosVbXfY0NBQjquP1owIfhsQdF13pc8xh2AYxiPIvV0vGMXY0W1cs2bNDD2tMNi2fTuAjX7HLYYBkz3POxKNRqv8CmhZ1tRLh6t8f7yKtaevSqfTbX6YYFnWVCFEG4BcxdqwUcyipiqdTrePxIRiJw8Uv6qrHK4JsVhsWrGTB0pT1hZsQiwWm+a6btGTB0pX11em0+l2y7J0Zwgyky9Jn7GUjY1KIURbLhNKnTxQ+s5OVhNGI3lgdFpblUKIw5kmWJY13XXddoxCe93vcjhfzBBCnHQc5+cAwMzfhP4X36JgtAwAgEnMbI/i/ACuz+5uSTFmQD4kIvLtaGqpIIS4kBcvHxIzvzMyOaOCvfmQ8jok1dnZ+XEkEqmC/gjr9YKfKaV0P5QCKPCssJTyUQCPYuCw4/W2fqQB/IOImuPxuO6n8jGMYQxjAAD8D7Dp2K++IPojAAAAAElFTkSuQmCC">
+      </a>
+      <a class="py-2 d-none d-md-inline-block mt-3" href="#">Eletrodomésticos</a>
+      <a class="py-2 d-none d-md-inline-block mt-3" href="#">Eletroportáteis</a>
+      <a class="py-2 d-none d-md-inline-block mt-3" href="#">Cama</a>
+      <a class="py-2 d-none d-md-inline-block mt-3" href="#">Mesa</a>
+      <a class="py-2 d-none d-md-inline-block mt-3" href="#">Banho</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="card bg-dark text-white">
+      <img src="img/daniel-norris-ZN_86cZrSN0-unsplash - Copia.jpg" class="editor-img card-img" alt="...">
+      <div class="card-img-overlay p-3 p-md-5 m-md-3 position-absolute top-50 start-50 translate-middle ">
+        <h5 class="card-title">Efetuando teste</h5>
+        <p class="card-text">estou efetuando um teste de espaçamento para verificar o tamanho.</p>
+      </div>
+    </div>
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center ">
+      <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <h1 class="display-4 fw-normal">Itens desejáveis</h1>
+        <p class="lead fw-normal">Esse site tem como objetivo acompanhamento de itens para o nosso novo apartamento</p>
+        <a class="btn fw-bold" href="#">Confira lista dos comprados</a>
+      </div>
+    </div>
+    <div class="position-relative p-3 p-md-3 text-center">
+      <h1 class="display-4 fst-normal">Eletrodomésticos
+        <img
+          src="data:image/png;base64,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" />
+      </h1>
+    </div>
+
+    <!--Eletrodomésticos-->
+    <div class="row row-cols-1 row-cols-md-5 w-100 p-3 ">
+      <div class="col pt-3 pb-3 ">
+        <div class="card h-100 editor-card">
+          <img src="img/microondas.jpg" class="card-img-top border-top" alt="...">
+          <div class="card-body pt-1">
+            <h5 class="card-title fw-bold">Microondas LG</h5>
+            <h6 class="card-title">Por quê o produto foi escolhido?</h6>
+            <p class="card-text">Custo benefício comparado a outros com a mesma potência
+              
+            </p>
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col pt-3 pb-3 card-est ">
+        <div class="card h-100 editor-card ">
+          <img src="img/4295977301_2.webp" class="card-img-top border-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col pt-3 pb-3 ">
+        <div class="card h-100 editor-card">
+          <img src="img/4800864333_1.webp" class="card-img-top border-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col pt-3 pb-3 card-est">
+        <div class="card h-100 editor-card">
+          <img src="img/inducao.webp" class="card-img-top border-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col pt-3 pb-3 ">
+        <div class="card h-100 editor-card">
+          <img src="img/ibbl.webp " class="card-img-top border-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!--Eletroportáteis-->
+
+    <div class="row row-cols-1 row-cols-md-3 g-4 pt-4  w-75 p-3">
+      <div class="col">
+        <div class="card h-100 editor-card">
+          <img src="img/liquidificador.webp" class="card-img-top border-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 editor-card">
+          <img src="img/sanduicheira.webp" class="card-img-top border-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 editor-card">
+          <img src="img/espremedor.webp" class="card-img-top border-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="container py-5 editor-footer">
+    <div class="row">
+      <div class="col-12 col-md">
+        <img
+          src="data:image/png;base64,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">
+        <small class="d-block mb-3 text-muted "> &copy; 2022 – G&M</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Vou colocar um Mapa aqui</h5>
+        <ul class="list-unstyled text-small">
+          <li>
+            <a class="link-secondary" href="#">Com API</a>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+</body>
+
+</html>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</footer>
