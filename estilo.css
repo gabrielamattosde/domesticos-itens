@@ -122,6 +122,10 @@
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
+.editor-lista {
+  background-color: #000000;
+}
+
  .btn-grad:hover {
    background-position: right center; /* change the direction of the change here */
    color: #fff;
@@ -136,16 +140,11 @@
 }
 
 
-
-
-  
-
 .btn-grad:hover {
   background-position: right center;
   color: #fff;
   text-decoration: none;
-  
-  
+    
 }
 .btn-grad:hover {
   background-position: right center; 
@@ -172,3 +171,5 @@
     flex: 1;
   }
 }
+
+
