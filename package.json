@@ -1,0 +1,25 @@
+{
+  "name": "domesticos-itens",
+  "version": "1.0.0",
+  "description": "teste",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass": "node-sass scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielamattosde/domesticos-itens.git"
+  },
+  "keywords": [
+    "Gabriela22"
+  ],
+  "author": "Gabriela Mattos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielamattosde/domesticos-itens/issues"
+  },
+  "homepage": "https://github.com/gabrielamattosde/domesticos-itens#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
