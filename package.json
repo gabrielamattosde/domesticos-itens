@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/gabrielamattosde/domesticos-itens#readme",
   "dependencies": {
+    "jquery": "^3.6.0",
     "node-sass": "^7.0.1"
   }
 }

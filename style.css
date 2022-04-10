@@ -163,8 +163,8 @@
   overflow: hidden;
   position: relative;
   width: 100%;
-  background-image: 
-  url(https://images.unsplash.com/photo-1467635624863-33cf388d9a2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  background-image:
+    url(https://images.unsplash.com/photo-1467635624863-33cf388d9a2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
   background-attachment: fixed;
   background-size: cover;
   -moz-background-size: cover;
@@ -186,7 +186,9 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.sc {color: #c29026;}
+.sc {
+  color: #c29026;
+}
 
 #parallax-world-of-ugg .block {
   background: white;
@@ -331,4 +333,16 @@
 }
 
 
+.carousel-item {
+  --r: calc(var(--position) - var(--offset));
+  --abs: max(calc(var(--r) * -1), var(--r));
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+  
+}
 
