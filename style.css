@@ -175,7 +175,14 @@
   background-position: center center;
 }
 
+.edit-text {
+ color: rgb(209, 139, 73);
+}
 
+.edit-sub {
+  color:#999; letter-spacing:-0.005em; word-spacing:1px;
+
+}
 
 .first-character {
   font-weight: 400;
