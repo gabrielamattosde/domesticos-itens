@@ -242,7 +242,7 @@
 }
 
 .editor-card {
-  box-shadow: rgb(112, 111, 111) 0px 22px 70px 4px;
+  align-items:flex-end;
   border: none;
   border-radius: 5%;
 }
@@ -420,3 +420,17 @@ h1 em {
   font-weight: 600;
 }
 
+label {
+  cursor: pointer;
+
+}
+
+
+#linha-vertical {
+  height: 400px;
+  border-right: 1px solid red;
+}
+
+.editor-listas {
+  background-color: #DCDCDC ;
+  box-shadow: rgba(226, 154, 46, 0.4) 5px 5px, rgba(240, 156, 46, 0.349) 10px 10px, rgba(240, 211, 46, 0.2) 15px 15px, rgba(240, 162, 46, 0.1) 20px 20px, rgba(240, 179, 46, 0.05) 25px 25px;}
